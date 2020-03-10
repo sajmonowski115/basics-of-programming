@@ -6,7 +6,7 @@ i = 1
 
 while(i):
     try:
-        x = int(input("Type a number: "))
+        x = int(input("Type an integer number: "))
         i=0
     except:
         print("Something is wrong. Try again")
