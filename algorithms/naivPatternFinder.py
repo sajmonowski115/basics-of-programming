@@ -1,108 +1,52 @@
 """
-This program is an example of Rabin-Karp algorithm. The pattern we're
-finding here is two dimensional. However to ease the problem we can
-with not much effort treanform the situation into lenear.
+This program is an example of a naiv looking for pattern algorithm.
+In our case the pattern is two-dimensional and we try to find it
+in a matrix of hexadecimal digits
 """
-
-"""
-NOTE:
-While exectuing the program there are created enormous lists. This may lead
-to a memory error especially on py 32-bit version. 64bit-version recommened.
-"""
-
-def hashL(lst):
-    """Converting five element list into a specific code"""
-
-    key = 0
-
-    for element in lst:
-        key += ord(element)
-
-    key += (ord(lst[0])%7) 
-    key -= (ord(lst[1])%11)
-    key += (ord(lst[2])%13)
-    key -= (ord(lst[3])%17)
-    key += (ord(lst[4])%19)
-    
-    return key
-
-def prepareList(file):
-    """create list of lists to operate easly in two dimensions"""
-
-    #open the file and work on it
-    with open(file, 'r') as f:
-        lst = []
-        for line in f:
-            line = line[:-1]
-            lst.append(line)
-
-        lstReady = []
-        for element in lst:
-            lstReady.append(list(element))
-
-        #triple pop to get rid of three extra empty lists created meanwhile
-        lstReady.pop()
-        lstReady.pop()
-        lstReady.pop()
-
-        #attention: ancommenting the belowe code allows to see the list
-        #however be aware that the size of the list is usually enormous
-        #print(lstReady)
-
-    return lstReady
 
 import time
 
 def findPattern(file, number):
+    """Finding a given pattern"""
 
-    lstReady = prepareList(file)
+    #open the file and work on it
+    with open(file, 'r') as f:
+        lst = []
+        for line in f: #store lines in a list without /n symobl
+            line = line[:-1]
+            lst.append(line)
 
-    lstFH = []
+    #create list of lists to operate easly in two dimensions
+    lstReady = []
+    for element in lst:
+        lstReady.append(list(element))
 
-    #pattern we're looking for
-    pattern = ['A', 'B', 'C', 'B', 'C']
+    #double pop to get rid of two extra empty lists created meanwhile
+    lstReady.pop() 
+    lstReady.pop()
 
-    #store the hash value of our pattern
-    value = hashL(pattern)
-
-    #create five element lists to compare easly to the pattern
-    for i in range(len(lstReady)-2):
-        for j in range(len(lstReady[i])-2):
-            tempLst = []
-            tempLst.append(lstReady[i][j])
-            tempLst.append(lstReady[i][j+1])
-            tempLst.append(lstReady[i][j+2])
-            tempLst.append(lstReady[i+1][j])
-            tempLst.append(lstReady[i+2][j])
-
-            lstFH.append(tempLst)
-
-        lstOfHash = []
-
-    #free some memory from no longer needed list
-    lstReady.clear()
-
-    #get all hash values and store them in a list at according indexes
-    for element in lstFH:
-        lstOfHash.append(hashL(element))
+    #attention: ancommenting the belowe code allows to see the list
+    #however be aware that the size of the list is usually enormous
+    #print(lstReady)
+    
 
     counter = 0
 
     start = time.time()
 
-    #compare the lists only when hash values match
-    for i in range(len(lstOfHash)):
-        if lstOfHash[i] == value:
-            flag = True
-            if lstFH[i][0] != pattern[0]:
+    #algorithm for finding the pattern
+    for i in range(len(lstReady)-2):
+        for j in range(len(lstReady[i])-2):
+            flag = True #settle true and check conditions
+            if lstReady[i][j] != 'A':
                 flag = False
-            if lstFH[i][1] != pattern[1]:
+            if lstReady[i][j+1] != 'B':
                 flag = False
-            if lstFH[i][2] != pattern[2]:
+            if lstReady[i][j+2] != 'C':
                 flag = False
-            if lstFH[i][3] != pattern[3]:
+            if lstReady[i+1][j] != 'B':
                 flag = False
-            if lstFH[i][4] != pattern[4]:
+            if lstReady[i+2][j] != 'C':
                 flag = False
             if flag: #if conditions met new repetition of pattern found
                 counter += 1
@@ -111,8 +55,8 @@ def findPattern(file, number):
 
     excTime = end - start
 
-    print("For matrix of", number, 'elements')
-    print("The pattern has been found", counter, 'times')
+    print("For matrix of", number, "elements")
+    print("The pattern has occured:", counter, "times")
     print("Process of finding pattern lasted:", excTime)
     print('\n')
 
@@ -124,7 +68,6 @@ def main():
     findPattern('5000_pattern.txt', 5000)
     #findPattern('8000_pattern.txt', 8000)
 
-    input("Press enter to continue..")
-
+    input("Press eneter to continue..")
+    
 main()
-
