@@ -1,0 +1,35 @@
+*Git global setup
+git config --global user.name "Szymon Bobrowski"
+git config --global user.email "szymekbobrowski@wp.pl"
+
+*Create a new repository
+git clone "address of the repository"
+cd "new repository"
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+*Push an existing folder
+cd existing_folder
+git init
+git remote add origin "address of the repository"
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+*Push an existing repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin "address of the repository"
+git push -u origin --all
+git push -u origin --tags
+
+*Create a new branch
+git branch "branch name"
+git push -u origin "branch name"
+
+*Switch to a branch
+git checkout "branch name"
+
+*Check your git status
+git status
