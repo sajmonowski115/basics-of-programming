@@ -14,8 +14,8 @@ stuff.append('pizza')
 print(stuff.count('pizza')) #2
 
 #creates a copy of the list
-stuffCopy = stuff.copy()
-print(stuffCopy)
+stuff_copy = stuff.copy()
+print(stuff_copy)
 
 #returns the index of first specified element
 print(stuff.index('pizza')) #0
