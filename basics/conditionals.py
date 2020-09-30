@@ -3,7 +3,7 @@ language = language.lower()
 
 
 if language == 'python':
-    print("You will have planty of work fields to choose from..")
+    print("You will have plenty of work fields to choose from..")
 elif language == 'java':
     print("A lot of staff to get through but you shall be rich once you've mastered it..")
 elif language == 'c++' or language == 'assembly' or language == 'c':
