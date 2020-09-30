@@ -1,3 +1,0 @@
-git clone <address of the repository>
-git config --global user.email "szymekbobrowski@wp.pl"
-git config --global user.name "sajmonowski115"
