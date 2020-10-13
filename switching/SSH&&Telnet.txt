@@ -1,0 +1,52 @@
+***BASIC INFO***
+
+Telnet and SSH allow the usage of terminal devices remotly
+
+
+***CONFIGURATION***
+
+1. configuring telnet
+
+(config)# interface vlan 1
+(config-if)# ip add IP MASK (for example: 192.168.1.100 255.255.255.0)
+(config-if)# no shutdown
+(config-if)# exit
+
+(config)# ip default-gateway IP (for example: 192.168.1.1)
+(config)# line vty 0 15
+(config-line)# password PASSWORD (for example: cisco)
+(config-line)# login
+(config-line)# exit
+
+(config)# service password-encryption
+(config)# enable secret PASSWORD (for example: class)
+
+
+2. configuring SSH
+
+(config)# interface vlan 1
+(config-if)# ip add IP MASK (for example: 192.168.1.100 255.255.255.0)
+(config-if)# no shutdown
+(config-if)# exit
+(config)# ip default-gateway IP (for example: 192.168.1.1)
+
+(config)# hostname NAME (for example: S10)
+(config)# ip domain-name (for example: company)
+(config)# crypto key generate rsa (than the value: 1024)
+(config)# ip ssh version 2
+(config)# username NAME password PASSWORD
+for example: username student password class
+
+(config)# line vty 0 15
+(config-line)# transport input ssh
+(config-line)# password PASSWORD (for example cisco)
+(config-line)# exit
+
+(config)# line console 0
+(config-line)# logging synchronous
+(config-line)# login local
+(config-line)# exit
+
+(config)# enable password PASSWORD (for example cisco)
+
+

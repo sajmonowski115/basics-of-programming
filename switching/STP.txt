@@ -1,0 +1,57 @@
+***BASCI INFO***
+
+The main task of STP is to prevent loops.
+
+A loop is a series of switch connections that allows a frame to get back where it started.
+
+A broadcast storm is the situation in which messages broadcast on a network cause multiple hosts to respond simultaneously by broadcasting their own messages, which, in turn, prompts further messages to be broadcast, and so on.
+
+Spanning tree blocks links, so that frames received on a blocked link are discarded.
+
+Spanning Tree is on by default in all Enterprise switches.
+
+Important terms:
+*root bridge- has all ports active
+*bridge ID (BID)- numeric ID which allows STP to identify each switch
+*root port- the port a switch is using to reach root bridge
+*designated port- an interface a switch uses to give connectivity to non-root bridges
+*blocked ports- all the ports that have been closed by STP
+*Bridge Protocol Data Unit (BPDU)- a special frame that allows switches to exchange STP information
+*available priority values: 0, 4096, 8192, 12288, ..., 61440
+
+PVST- Per-VLAN Spanning-Tree
+
+PortFast- a feature that allows port to transmit into forwarding state immediately.
+
+BPDUGuard- immediately shutdown the port if a BPDU is received
+
+
+
+***CONFIGURATION***
+
+1. Enabling Rapid- PVST:
+(config)# spanning-tree mode rapid-pvst
+
+2. Setting bridge priority:
+
+*choosing root and secondary root automatedly
+(config)# spanning-tree vlan VLAN ID root primary
+(config)# spanning-tree vlan VLAN ID root secondary
+
+*setting bridge prioritary number manually
+(config)# spanning-tree vlan VLAN ID priority PRIORITY NUMBER
+for example: spanning-tree vlan 1 priority 4096
+
+3. Enabling PortFast and BPDUGuard:
+(config)# interface INTERFACE ID
+(config-if)# spanning-tree portfast
+(config-if)# spanning-tree bpduguard enable
+
+#NOTE: to enable PortFast and BPDUGuard on all non-trunk ports use the commands below:
+(config-if)# spanning-tree portfast default
+(config-if)# spanning-tree bpduguard default
+
+4. Displaying STP properties:
+# show spanning-tree summary
+# show spanning-tree active
+# show spanning-tree vlan VLAN ID

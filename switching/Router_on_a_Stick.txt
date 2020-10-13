@@ -1,0 +1,34 @@
+***BASIC INFO***
+
+Inter-VLAN routing- a way to forward traffic between different VLAN-s by implementing a router in the network
+
+For a device inside a VLAN devices in another VLAN are on a remote subnet. Therefore, that device will contact its default gateway (the router) when trying to reach those devices.
+
+Router on a Stick uses a single link to switch frames beetwen different vlans.
+
+The router performs a specific Frame Rewrite operation: it changes the VLAN tag
+
+
+***CONFIGURATION***
+
+#NOTE: all the commands are performed on the router side
+
+1. turning on the interface
+(config)# int INT ID (for example: g0/1)
+(config-if)# no shutdown
+
+2. configuring subinterfaces
+(config)# int SUB-INT ID (for example: g0/1.10)
+(config-subif)# encapsulation dot1q VLAN ID (for example: 10)
+(config-subif)# ip address IP ADDRESS MASK
+for example: ip address 10.0.10.1 255.255.255.0
+
+3. configuring native vlan (for untagged frames)
+(config)# int SUB-INT ID (for example: g0/1.1)
+(config-subif)# encapsulation dot1q VLAN ID native
+for example: encapsulation dot1q 1 native
+
+4. troubleshooting
+# show running-config
+
+*in a pc to trace the route: C:\>tracert IP ADDRESS

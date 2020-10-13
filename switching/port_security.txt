@@ -1,0 +1,47 @@
+***BASIC INFO***
+
+Port Security is a technology that restrict access to the network based on source MAC address.
+
+Switch can learn a few thousend mac addresses. After its TCAM (ternary content-addressable memory) is full it will act as a hub
+
+Port Security can only be configured on access ports hardcoded with switchport mode access, and not on trunks
+
+There might be one of three actions specified what to do when a violation occurs:
+^protect- silently drops traffic from any exceeding MAC
+^restrict- drops traffic from any exceeding MAC and generates an alert
+^shutdown- blocks the port and generates an alert
+
+***CONFIGURATION***
+
+#NOTE- turning on Port Security is mandatory for other commands to work
+
+*force a port into an access mode port (might be neccessary in some cases)
+(config-if)# switchport mode access
+
+*turn on port security
+(config-if)# switchport port-security
+
+*set maximum value of MAC addresses to accept
+(config-if)# switchport port-security maximum NUMBER (for example: 5)
+
+*learn MAC addresses seen on the port, then allow only them
+(config-if)# switchport port-security mac-address sticky
+
+*hardcode one MAC address to the port
+(config-if)# switchport port-security mac-address MAC ADDRESS
+
+*specify what to do when a violation happens
+(config-if)# switchport port-security violation ACTION 
+(possible options: protect/restrict/shutdown)
+
+*display the configuration
+# show running-config
+# show interfaces status
+# show startup-config
+
+*save current configuration
+# write
+
+*manually recover a shutdown port
+(config-if)# shutdown
+(config-if)# no shutdown

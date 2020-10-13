@@ -1,0 +1,35 @@
+***BASIC INFO***
+
+VTP - VLAN Trunk Protocol
+
+goal of the protocol is VLAN propagation
+
+VTP is only possible on Trunks, not access links
+
+modes:
+*server - configure vlans and propagate to other switches
+*client - can't configure vlans, receive VTP and propagte to other
+connected switches
+*transparent - does not sync with other VTP switches but allows VTP messages to pass through to other switches
+
+two switches are in the same VTP domain if they share identical domain name, password and VPT version
+
+***CONFIGURATION***
+
+1. configuring VTP server
+(config)# vtp domain NAME (for example: company)
+(config)# vtp password PASSWORD (for example: cisco)
+(config)# vtp version 2
+(config)# vtp mode server
+
+2. configuring VTP client
+(config)# vtp domain NAME (for example: company)
+(config)# vtp password PASSWORD (for example: cisco)
+(config)# vtp version 2
+(config)# vtp mode client
+
+2. configuring VTP transparent
+(config)# vtp mode transparent
+
+4. displaying VTP parameters
+# show vtp status

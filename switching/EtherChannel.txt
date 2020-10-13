@@ -1,0 +1,50 @@
+***BASIC INFO***
+
+main idea; when you connect two switches with multiple cabels they act as a single link and STP does not disable any ports into blocking state so that you can use full bandwidth
+
+LAG (Link Aggregation)- aggregating a few links into one logical link
+
+You can configure PortChannel as any other port; set an IP address, configure it as a trunk, enable PortFast and so on
+
+Only interfaces of the same type might be bundelded into a PortChannel. For example, you can’t put a FastEthernet interface in the same PortChannel where you put a GigabitEthernet
+
+
+PortChannel options:
+
+*static PortChannel- it is neccessary to hardcode the existence of the PortChannel on both devices
+
+*LACP (Link Aggregation Control Protocol) - widely used by different vendors
+^active mode- will actively try to negotiate with the other device
+^passive mode- will wait for the other side to initiate the 
+negotiation
+
+*PAgP (Port Aggregation Protocol) - cisco property
+^desirable mode- indicates that the device will try to negotiate
+^auto mode- indicates that the device will wait for the other to negotiate
+
+
+Due to the algorithm used in hashing function, interfaces numbers should be powers of 2 (2,4,8,...). This solution ensures more efficient packet transport
+
+
+
+***CONFIGURATION***
+
+1. Creating PortChannel static
+(config)# int range INT ID
+for example: int range gig1/0/1-3
+(config-if)# channel-group ID mode on (ID of PortChannel e.g. 1)
+
+2. Putting PortChannel into trunk mode
+(config)# int PortChannel ID (ID of PortChannel)
+(config-if)# switchport mode trunk
+
+3. Creating PortChannel LACP
+(config)# int range INT ID
+(config-if)# channel-group ID mode MODE (active or passive)
+ 
+3. Creating PortChannel PAgP
+(config)# int range INT ID
+(config-if)# channel-group ID mode MODE (desirable or auto)
+
+4. Displaying PortChannel
+# show etherchannel summary

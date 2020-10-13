@@ -1,0 +1,56 @@
+***BASIC INFO***
+
+vlan id ranges from 1 to 4094
+
+normal range is 1-1005
+
+vlan 1 is default vlan, all ports are initially in the vlan
+
+you cannot modify vlans 1, 1002, 1003, 1004, 1005
+
+trunk- carries multiple vlans on a single link
+
+IEEE 802.1q - standard protocol for trunk links. A dot1q frame is actually an Ethernet frame with the VLAN ID (so called 'tag')
+
+native VLAN - all untagged vlans are considered part of the native vlan
+
+
+***CONFIGURATION***
+
+1. creating VLANs:
+(config)# vlan ID (for example: 99)
+(config-vlan)# name NAME (for example: Accounting)
+(config-vlan)# exit
+
+2. displaying VLANs:
+# show vlan brief
+
+3. configuring access ports:
+
+*to access a single port 
+(config)# interface FastEthernet PORT ID 
+for example: interface FastEthernet 0/9
+
+*to access multiple ports
+(config)# interface range FastEthernet PORT IDs
+for example: interface range FastEthernet 0/12, FastEthernet 0/15 - 17
+
+(config-if-range)# switchport mode access
+(config-if-range)# switchport access vlan VLAN ID
+(config-if-range)# exit
+
+4. configuring Trunks:
+
+#NOTE- switchport nonegotiate is optional
+
+(config)# int gi/fa PORT ID (can be used with range command as well)
+(config-if)# switchport trunk encapsulation dot1q
+(config-if)# switchport mode trunk
+(config-if)# switchport nonegotiate (turns off Dynamic Trunking Protocol)
+(config-if)# switchport trunk native vlan VLAN ID
+(config-if)# switchport trunk allowed vlan VLAN IDs
+for example: switchport trunk allowed vlan 101-102,201,301
+(config-if)# exit
+
+5. displaying trunk interfaces:
+# show interfaces trunk
