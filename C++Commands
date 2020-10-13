@@ -1,2 +1,0 @@
-To run a c++ file:
-g++ fileName.cpp -o fileName.out && ./fileName.out
