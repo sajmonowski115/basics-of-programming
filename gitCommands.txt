@@ -1,6 +1,6 @@
 *Git global setup
-git config --global user.name "Szymon Bobrowski"
-git config --global user.email "szymekbobrowski@wp.pl"
+git config --global user.name sajmonowski115
+git config --global user.email szymekbobrowski@wp.pl
 
 *Create a new repository
 git clone "address of the repository"
@@ -20,16 +20,16 @@ git push -u origin master
 *Push an existing repository
 cd existing_repo
 git remote rename origin old-origin
-git remote add origin "address of the repository"
+git remote add origin ADDRESS_OF_THE_REPOSITORY
 git push -u origin --all
 git push -u origin --tags
 
 *Create a new branch
-git branch "branch name"
-git push -u origin "branch name"
+git branch BRANCH_NAME
+git push -u origin BRANCH_NAME
 
 *Switch to a branch
-git checkout "branch name"
+git checkout BRANCH_NAME
 
 *Check your git status
 git status
