@@ -1,0 +1,22 @@
+Kamieniołom dziediczy z klasy Building, która dziedziczy z klasy Thread.
+
+Produkcja kamienia w kamieniołomie jest cykliczna. Następuje co każde 15 sekund.
+Ilość kamienia, który jest produkowany co każde 15 sekund jest zapisana w zmiennej stoneProduction.
+Zmienna stoneProduction obliczana jest według następującego wzoru:
+stoneProducion = 25 * level
+level- poziom kamieniołomu
+
+Produkcja kamienia obsługiwana jest poprzez wątek (metody run() oraz start()).
+
+Aby rozbudować kamieniołom do kolejnego poziomu potrzebne są kamień oraz drewno.
+Koszty rozbudowy obliczane są następująco:
+kamień: stoneProduction*3
+drewno: stoneProduction*3
+
+Przykład: kamieniołom ma 3 poziom. Jego stoneProduction wynosi 75, zatem co każde 15 sekund 
+zmienna amountOfStone (w ratuszu) zwiększa się o 75. Żeby rozbudować kamieniołom do poziomu 
+czwartego potrzebne jest 225*kamień oraz 225*drewno.
+
+Rozkaz rozbudowy kamieniołomu wydawany jest w ratuszu. Należy sprawdzić czy
+gracz posiada wystarczającą ilość drewna i kamienia. Jeśli to tak to poziom kamieniołomu się zwiększa, 
+a zmienne amountOfWood oraz amountOfStone zmniejszają się o odpowiednią ilość (koszt robudowy).

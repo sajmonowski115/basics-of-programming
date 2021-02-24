@@ -1,0 +1,2 @@
+Zad 1, Szymon i Marek, ZROBIONE
+Utworzenie diagramu klas UML w creatly przedstawiającego wszystkie klasy projektu.

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="game.RTS.com.BarracksGUI">
+  <grid id="27dc6" binding="barracksPanel" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="985" height="1016"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="e2705" binding="currentArmy" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11682885"/>
+        </properties>
+        <border type="none" title="currently accesible combat units"/>
+        <children>
+          <component id="c1116" class="javax.swing.JTextField" binding="numOfArchers">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Arial Black" size="16" style="0"/>
+            </properties>
+          </component>
+          <component id="4dc60" class="javax.swing.JTextField" binding="numOfSwordsmen">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Arial Black" size="16" style="0"/>
+            </properties>
+          </component>
+          <component id="5c674" class="javax.swing.JTextField" binding="numOfCavaliers">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Arial Black" size="16" style="0"/>
+            </properties>
+          </component>
+          <component id="759ee" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="11" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Courier New" size="16" style="2"/>
+              <foreground color="-12897605"/>
+              <text value="archers"/>
+            </properties>
+          </component>
+          <component id="1578b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="7" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Courier New" size="16" style="2"/>
+              <foreground color="-12897605"/>
+              <text value="swordsmen"/>
+            </properties>
+          </component>
+          <component id="6ed41" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="6" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Courier New" size="16" style="2"/>
+              <foreground color="-12897605"/>
+              <text value="cavaliers"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ffe2b" binding="icons" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="icons"/>
+        <children>
+          <component id="31de8" class="javax.swing.JLabel" binding="archerIcon">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="game/RTS/com/Pictures/archer.jpg"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="2cee2" class="javax.swing.JLabel" binding="swordsmanIcon">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="game/RTS/com/Pictures/swrodsman.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="67d12" class="javax.swing.JLabel" binding="cavalierIcon">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="game/RTS/com/Pictures/cavalier.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="834e0" binding="recruitPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11748572"/>
+        </properties>
+        <border type="none" title="recruit options"/>
+        <children>
+          <component id="d55ab" class="javax.swing.JButton" binding="recruitArcherButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Lucida Sans Typewriter" size="14" style="2"/>
+              <text value="recruit archer"/>
+            </properties>
+          </component>
+          <component id="5d785" class="javax.swing.JButton" binding="recruitSwordsmanButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Lucida Sans Typewriter" size="14" style="2"/>
+              <text value="recruit swordsman"/>
+            </properties>
+          </component>
+          <component id="d65d0" class="javax.swing.JButton" binding="recruitCavalierButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Lucida Sans Typewriter" size="14" style="2"/>
+              <text value="recruit cavalier"/>
+            </properties>
+          </component>
+          <component id="5e59d" class="javax.swing.JLabel" binding="archerCostLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="archerCostLabel"/>
+            </properties>
+          </component>
+          <component id="1d5b3" class="javax.swing.JLabel" binding="swordsmanCostLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="swordsmanCostLabel"/>
+            </properties>
+          </component>
+          <component id="f7bbd" class="javax.swing.JLabel" binding="cavalierCostLabel">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="cavalierCostLabel"/>
+            </properties>
+          </component>
+          <component id="ebfc7" class="javax.swing.JLabel" binding="archerAttackValue">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="archerAttackValue"/>
+            </properties>
+          </component>
+          <component id="22991" class="javax.swing.JLabel" binding="swordsmanAttackValue">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="swordsmanAttackValue"/>
+            </properties>
+          </component>
+          <component id="367b9" class="javax.swing.JLabel" binding="cavalierAttackValue">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="cavalierAttackValue"/>
+            </properties>
+          </component>
+          <component id="9a3d4" class="javax.swing.JLabel" binding="archerDefenceValue">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="archerDefenceValue"/>
+            </properties>
+          </component>
+          <component id="20ff8" class="javax.swing.JLabel" binding="swordsmanDefenceValue">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="swordsmanDefenceValue"/>
+            </properties>
+          </component>
+          <component id="9fe7c" class="javax.swing.JLabel" binding="cavalierDefenceValue">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Fira Code" size="13" style="1"/>
+              <text value="cavalierDefenceValue"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a3c88" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="82182" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="game/RTS/com/Pictures/gold.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="916b5" class="javax.swing.JTextField" binding="amountOfGold">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Arial Black" size="16" style="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5199" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-4497566"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="779b8" class="javax.swing.JLabel" binding="Barracks">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="44" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4497566"/>
+              <font name="Lucida Sans Typewriter" size="20" style="1"/>
+              <foreground color="-16777216"/>
+              <text value="Barracks"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,7 @@
+﻿Zad 11, Marek, ZROBIONE
+
+1. Dodać funkcjonalość pojawiania się raportu po udanym ataku wioski na miastio wyświetlającym
+informację DEFEAT oraz straty gracza (sytuacja GAME OVER)
+2. Dodać action listenera w klasie GameGUI do przycisku World Map, tak żeby po jego kliknięciu
+otwierała się mapa gry. Należy zwrócić uwagę, że po jej zamknięciu gra nie powinna się kończyć (trzeba usunąć komendę EXIT_ON_CLOSE)
+3. Wygenerować diagram (ewnetualnie kilka diagramów) UML w środowisku IntelliJ i dodać go do dokumentacji (obok diagramu creatly, który stworzyliśmy na początku)

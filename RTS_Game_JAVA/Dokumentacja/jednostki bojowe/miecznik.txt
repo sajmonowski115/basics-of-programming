@@ -1,0 +1,10 @@
+Micznik jest jednostką najbardziej uniwersalną. Sprawdzi się nienajgorzej
+zarówno przy zdobywaniu wiosek jak i przy obronie miasta. Jeśli gracz nie określił 
+jeszcze swojej taktyki czy chce jak najszybciej zdobyć sąsidnie wioski 
+zanim nastąpi atak czy też najpier woli zainwestować w 
+solidną obronę- warto zainwestować w rekrutację mieczników.
+
+Konkretne parametry klasy miecznik:
+*wartość ataku: 20
+*wartość obrony: 20
+*koszt rekrutacji: 8

@@ -1,0 +1,12 @@
+﻿Zad 10, Marek, ZROBIONE
+
+Napisać klasę WarReportsGUI. Zadaniem tej klasy jest wyświetlanie informacji
+na temat ostatnio stoczonej bitwy pomiędzy armią gracza, a barbarzyńcami.
+
+Z każdej bitwy powinny być dostępne następujące informacje:
+1. kto kogo zaatakował (którą wioske zaatakował gracz lub która wioska zaatakowała miasto)
+2. w jakim momencie rozgyrwki odbyła się bitwa (minuty:sekundy) //opcjonalnie
+3. kto zwyciężył w tej bitwie
+4. jakie straty gracz poniósł w bitwie (liczba straconych mieczników, kawalerzystów, łuczników)
+
+Okno z raportem poiwnno pojawiać się na ekranie zaraz po stoczonej bitwie.

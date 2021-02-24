@@ -1,0 +1,11 @@
+Zad 13, Szymon, W TRAKCIE
+
+Przemyśleć całą grę i wykonać odpowiednie obliczenia tak aby gra była na odpowiednim poziomie trudności 
+tzn. tak aby dało się wygrać, ale żeby wymagało to odpowiedniej taktyki i odrobiny szczęścia.
+
+Parametry, które należy rozważyć:
+*produkcja surowców
+*koszty rozbudowy budynków
+*koszty rekrutacji jednostek
+*wartości bojowe ataku i obrony poszczególnych jednostek
+*ilość barbarzyńców zamieszkujących poszczególne wioski

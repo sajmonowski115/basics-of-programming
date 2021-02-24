@@ -1,0 +1,8 @@
+Kawaler jest jednostką rekrutowaną z myślą o podboju wiosek.
+Raczej nieszczególnie przydaje się w fazie obronnej (staje do walki w obronie miasta tylko w sotateczności),
+jednak w fazie ataku to właśnie kawalerzy odgrywają najbardziej znaczącą rolę.
+
+Konkretne parametry klasy kawaler:
+*wartość ataku: 150
+*wartość obrony: 25
+*koszt rekrutacji: 35

@@ -1,0 +1,8 @@
+Łucznik jest jednostką typowo obronną, posiada dużą wartość obrony, lecz niewielką wartość ataku. 
+Szczególnie przydaje się w trakcie obrony przed atakiem barbarzyńców
+wysłanym z jednej z sąsiednich wiosek.
+
+Konkretne parametry klasy łucznik:
+*wartość ataku: 12
+*wartość obrony: 75
+*koszt rekrutacji: 22

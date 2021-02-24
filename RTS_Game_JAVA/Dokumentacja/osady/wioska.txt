@@ -1,0 +1,46 @@
+Dookoła miasta na mapie znajdują się dokładnie 4 wioski zamieszkane
+przez barbarzyńów. Celem gracza jest podbicie każdej z tych wiosek.
+
+W wioskach mieszkają barbarzyńcy, którzy także atakują miasto gracza.
+
+Każda wioska posiada dwa tokeny- token ilości barbarzyńców oraz token
+czasu ataku.
+
+token ilości barbarzyńców określa liczbę barbarzyńów żyjących w wiosce
+Dostępne tokeny ilości barbarzyńów to:
+*token1- 45 barbarzyńców
+*token2- 60 barbarzyńców
+*token3- 75 barbarzyńców
+*token4- 99 barbarzyńców
+
+token czasu ataku określa czas, kiedy z danej wioski nastąpi atak
+Dostępne tokeny czasu ataku:
+-token1; między 10, a 20 minutą
+-token2; między 21, a 31 minutą
+-token2; między 32, a 43 minutą
+-token2; między 44, a 54 minutą
+
+Wszystkie 4 tokeny z obu typów muszą zostać rozlosowane do wiosek. Każda wioska otrzymuje
+dokładnie jeden token ilości barbarzyńców i jeden token czasu ataku.
+
+Dla gracza wiodczny jest token ilość barbarzyńców, a token czasu ataku
+jest ukryty. To oznacza, że gracz widzi, która wioska posiada ilu barbarzyńców,
+ale nie wie, z której wioski nastąpi kolejny atak.
+
+Atak barbarzyńców przeprowadzany jest w następujący sposób- atakuje 2/3 ogólnej
+liczby barbarzyńców z danej wioski. 
+Jeśli atak zostanie odparty to wszyscy atakujący barbarzyńcy giną, a w danej wiosce
+do pokonania zostaje tylko 1/3 barbarzyńców. 
+W mieście natomiast ilość jednostek bojowych zostaje zmiejszona o taką jaka była
+potrzebna do odparcia ataku barbarzyńców (obliczane na podstawie wartość ataku/ wartość obrony).
+
+Przykład:
+Wioska z 60 barbarzyńcami atakuje miasto. W ataku bierze 2/3 * 60, czyli 40 barbarzyńców.
+Miasto posiada 50 łuczników. Atak zostaje odparty. Ginie 13 łuczników.
+Kiedy gracz będzie atakował tę wioskę w celu jej podbica, do pokonania zostaje mu
+jedyne 1/3 * 60 czyli 20 barbarzyńców.
+
+Token czasu określa w jakim przedziale nastąpi atak z danej wioski. Dokałny czas 
+ataku w tym przedziale powinnien zostać przydzielony randomowo dla każdej wioski.
+
+

@@ -1,0 +1,2 @@
+Zad 2, Szymon i Marek, ZROBIONE
+Utworzenie projektu oraz wstępna implementacja klas w Intellij.

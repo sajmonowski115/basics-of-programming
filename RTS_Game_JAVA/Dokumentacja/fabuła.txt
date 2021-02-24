@@ -1,0 +1,39 @@
+Ilość graczy: 1
+Czas trwania rozgrywki: 1h
+
+W grze dostępne są wioski i miasta.
+Gracz zaczyna ze swoim miastem, którym zarządza.
+Dookoła miasta na mapie znajduą się wioski, które nie należą do gracza. 
+W wioskach mieszkają wrogo nastawieni barbarzyńcy. 
+Celem gry jest zdobycie wszystkich wiosek i pokonanie barbarzyńców. 
+Gracz wygrywa tylko wówczas gdy w ciągu rogrywki uda mu się zdobyć wszystkie wioski.
+
+W mieście znajdują się następujące budynki produkcyjne:
+*tartak (Sawmill)- produkuje drewno
+*kamieniołom (Quarry)- produkuje kamień
+*mennica (Mint)- produkuje złoto
+
+Po rozbudowie budynku produkcyjnego jego produkcja staje się bardziej wydajna.
+
+W mieście znajdują się następujące budynki funkcyjne:
+*ratusz- ogólne zarządzanie miastem, podejmowanie decyzji
+*koszary- szkolenie jednostek bojowych
+
+Po rozbudowie koszarów wzrasta szybkość tworzenia jednostek.
+
+Oprócz produkcji surowców w mieście, po zdobyciu wioski gracz otrzymuje z niej podatki. 
+Raz zdobyta wioska do końca rozgrywki pozostaje pod panowaniem gracza. 
+Zdobyte wioski można rozbudowywać- wówczas podatki z tej wioski są większe.
+
+Co jakiś czas (pseudolosowy) z niezdobytych wiosek wysyłane są ataki na miasto gracza. 
+Ich częstotliwość wzrasta z czasem. Jeśli gracz nie jest w stanie odeprzeć ataku- przegrywa rozgrywkę.
+
+Gracz może tworzyć jednostki bojowe, które różnią się między sobą następującymi parametrami: 
+wartość ataku, wartość obrony, koszt produkcji.
+
+Dostępne w grze jednostki bojowe:
+*miecznik (Swrodsman)
+*kawalerzysta (Cavalier)
+*łucznik: (Archer)
+*barbarzyńca (Barbarian, nie można ich tworzyć w koszarach)
+

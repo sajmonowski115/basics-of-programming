@@ -1,0 +1,35 @@
+Miasto jest zasadniczym punktem wyjścia każdej rozgrywki. Gracz zaczyna
+rozgrywkę posiadając jedną osadę- swoje miasto. 
+
+W mieście znajdują się budynki produkcyjne: tartak, kamieniołom oraz mennica,
+które mogą być nieustannie rozbudowywane przez gracza w trakcie rogrywki.
+
+W mieście znajdują się także koszary oraz ratusz.
+
+W koszarach rekrutowane są jednostki bojowe.
+
+Ratusz jest najbardziej rozbudowaną i kompleksową częścią miasta;
+to w nim podejmowane są wszelkie decyzje takie jak rozbudowa budynków
+funkcyjnych oraz wysyłanie ataków na wioski.
+
+Mechanizm ataku:
+Decyzja o ataku podjęta zostaje w ratuszu (TownHall). Gracz ma możliwość
+podania liczby jednostek z każdego rodzaju, którą chce wykorzystać do ataku na wioskę.
+Aby zdobyć wioskę trzeba pokonać wszystkich barbarzyńców znajdujących się w tej wiosce.
+Jeśli atak się nie powiedzie wszystkie wysłane do ataku jednostki przepadają, a liczba
+barbarzyńców pozostaje niezmieniona. 
+Jeśli natomiast atak okaże się udany to wioska automatycznie przechodzi pod panowanie
+gracza (jej status zmienia się na podbity) i z wioski automatycznie zaczynają spływać
+podatki do miasta. Liczba jednostek gracza spada o tyle ile potrzebnych było 
+do pokonania znajdujących się w wiosce barbarzyńców.
+
+Przykład:
+Atakujemy wioskę, w której znajduje się 75 barbarzyńców. Do ataku wysłanych zostaje 20
+kawalrzystów. Wioska zostaje zdobyta, a liczba kawalerów zmniejsza się o 7 to znaczy zostaje ich 13.
+
+Uwagi:
+1. Podczas obrony jeśli w mieście znajdują się różne rodzaje jednostek to najpierw
+wykorzystwani zostją łucznicy, następnie miecznicy, a na końcu kawalerzyści.
+
+2. Podczas ataku jeśli wysłane zostają różne jednostki bojowe, najpierw atakują
+kawalerzyści, następnie miecznicy, a na końcu łucznicy.

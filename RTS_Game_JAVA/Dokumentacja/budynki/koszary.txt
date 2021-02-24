@@ -1,0 +1,13 @@
+Koszary są budynkiem, w którym rekrutowane są jednostki bojowe oraz
+przechowywane są informacje o akutalnej ilości jednostek.
+
+Dostępne do rekrutacji jednostki to:
+-łucznik (Archer)
+-kawalerzysta (Cavalier)
+-miecznik (Swordsman)
+
+Każda jednostka ma określone trzy wartości (koszt produkcji, wartość ataku, wartość obrony). 
+Szczegółowe informacje na temat jednostek można znaleźć w folderze jednostki bojowe.
+
+Jeśli gracz posiada wystarczającą ilość złota to dana jednostka jest tworzona natychmiast
+(bez czasu zwłoki), a zmienna amountOfGold w ratuszu jest na bieżąco aktualizowana.
