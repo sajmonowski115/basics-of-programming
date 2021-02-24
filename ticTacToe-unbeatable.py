@@ -1,4 +1,4 @@
-#This project is a classical tic tac toe game
+#This project is an unbeatable tic tac toe game
 #author~ Szymon Bobrowski
 #date: 24.02.2020
 
