@@ -1,0 +1,50 @@
+OSPF
+
+*Konfigurowanie sieci w OSPF
+# conf t
+(config)# router ospf
+(config-router)# network ADDRESS/MASK area AREA
+np. network 192.168.1.0/24 area 0.0.0.0
+
+*Zmiana kosztu interfejsu rutera w OSPF
+(config)# int INTERFACE (np. eth0)
+(config-if)# ospf cost COST (np. 45)
+
+*Konfiguracja interfejsu loopback
+(config)# int dummy0
+(config-if)# no shutdown
+(config-if)# ip addrress ADDRESS/MASK
+np. ip address 200.200.200.200/32
+
+*Agregacja prefiksów
+(config)# router ospf
+(config-router)# area AREA range NETWORK/MASK
+np. area 10.64.0.0 range 10.64.0.0/16
+
+*Manualne nadanie ruterowi wybranego ID
+(config)# router ospf
+(config-router)# ospf router-id ADDRESS
+np. ospf router-id 230.230.230.230
+
+*Zmiana czasu hello-interval, dead-interval oraz parametru priority
+(config)# int INTERFACE (np. eth0)
+(config-if)# ip ospf dead-interval <1-65535> (np. 32)
+(config-if)# ip ospf hello-interval <1-65535> (np. 8)
+(config-if)# ip ospf priority <1-255> (np. 100)
+
+*Redystrybucja rip do ospf
+(config)# router ospf
+(config-router)# redistribute rip
+
+*Sprawdzenie kosztu (metryka) dla pojedynczych interfejsów rutera
+~# vtysh -e "show ip ospf interface" | egrep "eth|Cost"
+
+*Sprawdzanie konfiguracji ospf
+# show ip ospf
+# show ip ospf neighbor
+# show ip ospf route
+# show ip ospf database
+# show ip ospf database router
+# show ip ospf database network
+# show ip ospf border-routers
+# show ip ospf database summary

@@ -1,0 +1,81 @@
+QUAGGA
+
+*Sprawdzenie akutalnie działających maszyn 
+>$ vlist
+
+*Stworzenie wirtualnej maszyny i/lub jej otwarcie
+>$ vstart NAME --INTERFACE=DOMAIN
+np. vstart pc1 --eth0=A
+
+*Uruchomienie całego laboratorium
+>$ lstart
+
+*Zmiana adresu interfejsu
+~# ifconfig INTERFACE ADDRESS netmask MASK up
+np. ifconfig eth0 10.0.0.1 netmask 255.255.255.0 up
+
+*Sprawdzenie informacji o konkretnym interfejsie
+~# ifconfig INTERFACE
+np. ifconfig eth0
+
+*Wyświetlenie tablicy rutingu
+~# route
+
+*Dodanie trasy statycznej do odległej sieci
+~# route add -net DEST_ADDRESS/MASK gt GATEWAY_ADDRESS
+np. route add -net 192.168.2.0/24 gw 192.168.1.1
+
+*Ustawianie bramy domyślnej
+~# route add default gw GATEWAY_ADDRESS
+np. route add default gw 192.168.1.1
+
+*Konfigurowanie demonów rutingu z poziomu maszyny wirtualnej
+~# telnet localhost DAEMON
+np. telnet localhost ospfd
+
+*Przejście do terminala quaggi i wyjście z niego
+~# vtysh
+# exit 
+
+*Permanentna zmiana konfiguracji interfejsów z poziomu maszyny wirtualnej
+~# nano /etc/network/interfaces
+przykładowa konfiguracja:
+auto eth0
+iface eth0 inet static
+	address 10.0.0.1
+	network 10.0.0.0
+	netmask 255.255.255.0
+
+*Egzekwowanie aktualnej konfiguracji bez rebootwania maszyny wirtualnej
+~# /etc/init.d/networking restart
+~# /etc/init.d/zebra restart
+	
+*Spradzenie bieżącej konfiguracji rutingu w ruterze
+# show running-config
+
+*Zapisywanie aktualnej konfiguracji demonów do plików konfiguracyjnych maszyny wirtualnej
+# write file
+lub
+(config)# do write file
+
+*Kopiowanie plików konfiguracyjnych do maszyny hosta
+~# cp /etc/zebra/FILE /hostlab/DIRECTORY/
+np. cp /etc/zebra/ospfd.conf /hostlab/r1/etc/zebra/
+zamiast katalogu hostlab można też użyć hosthome
+
+*Przechwytywanie komunikatów z tcpdump
+~# tcpdump -i INTERFACE
+np. tcpdump -i eth0
+
+*Zapisywanie wyniku tcpdump do pliku na maszynie hosta
+~# tcpdump -i INTERFACE -w /hostlab/FILE.pcap
+np. tcpdump -i eth0 -w /hostlab/capture.pcap
+zamiast katalogu hostlab można też użyć hosthome
+
+*Wysyłanie komunikatu ping ze śledzeniem trasy
+*ping -R ADDRESS
+np. ping -R 192.168.2.1
+	
+*Komendy do zamykania labu:
+~# halt //zamyka maszynę wirtualną, w której użyto polecenia i zachowuje plik *.disk
+>$ lcrash //zamyka całe laboratorium z poziomu hosta i usuwa pliki *.disk

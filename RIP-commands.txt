@@ -1,0 +1,16 @@
+RIP
+
+*Dodawanie sieci w RIP
+# conf t
+(config)# router rip
+(config-router)# network ADDRESS/MASK
+np. network 192.168.1.0/24
+
+*Ustanawianie sąsiedztwa pomiędzy dwoma ruterami RIP
+# conf t
+(config)# router rip
+(config-router)# neighbor ADDRESS
+np. neighbor 192.168.3.2
+
+*Sprawdzanie konfiguracji rip
+# show ip rip
