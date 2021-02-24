@@ -1,3 +1,7 @@
+// This program is an extended tic-tac-toe game. The board size is between 4 and 10.
+// author ~ Szymon Bobrowski
+// date: 25.07.2019
+
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
