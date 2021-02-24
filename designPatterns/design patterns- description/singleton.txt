@@ -1,0 +1,12 @@
+Singleton należy do grupy wzorców kreacyjnych
+
+Singleton jest to klasa, która jest instancjonowana w systemie tylko jeden raz. Każde użycie takiej klasy odnosi się do tej samej instancji.
+
+Singleton to wzorzec projektowy, według którego w ramach maszyny wirtualnej Javy (JVM) może istnieć tylko jedna instancja obiektu danej klasy i musi być zapewniony globalny dostęp do tej instancji.
+
+inicjalizacja lazy (leniwa)- obiekt jest inicjowany na żądanie np. poprzez wywołanie metody getInstance()
+
+inicjalizacja eager (zachłanna)- obiekt jest tworzony w samej klasie, jeszcze przed wywołaniem jakiejkolwiek metody
+
+metoda getInstance nie może przyjmować żadnych parametrów
+niepisana reguła- metoda getInstace zawsze powinna mieć taką nazwę

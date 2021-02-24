@@ -1,0 +1,9 @@
+wzorzec builder należy do grupy wzorców kreacyjnych
+
+Ogólnie mówiąc Buildery są dodatkowymi klasami, które ułatwiają tworzenie innych złożonych klas.
+
+Budowniczy jest kreacyjnym wzorcem projektowym, który daje możliwość tworzenia złożonych obiektów etapami, krok po kroku.
+
+Problem: kiedy klasa tworzy obiekty o wielu atrybutach to mamy dwie możliwości; bardzo duży konstruktor (daje możliwość zabezpieczenia przed niepodaniem wymaganych pól, ale kod staje się niczytelny) lub wykorzystanie wielu seterów (czytelny kod, ale brak możliwości zabezpieczenia przed niepodaniem wymaganych pól)
+
+Rozwiązaniem jest wzorzec builder

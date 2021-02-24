@@ -1,0 +1,44 @@
+Diagram types / rodzaje diagramów:
+
+1. ACTIVITY DIAGRAM / DIAGRAM AKTYWNOŚCI (CZYNNOŚCI)
+- określa w jaki sposób system będzie osiągał postawione cele
+- przedstawia akcje i to w jaki sposób te akcje są ze sobą powiązane
+- jedyne diagramy w widoku procesu (system 4+1 Kruchtena)
+- opisują dynamikę systemu
+- wysokopoziomowe procesy biznesowe
+- pokazują aktywności bez pokazania bytów, które te aktywności wykonują
+
+2. USE CASE DIAGRAM / DIAGRAM PRZYPADKÓW UŻYCIA
+- describes dynamic behavior of the system
+- consists of actors, use cases and their relationships
+* single use case diagram- one particular functionality of a system
+  entire system- a number of use case diagrams
+- system functionailties written in an organized manner
+- the purpose is to gather requriments and actors
+- used at very high level of design
+- used in reverse and forward engineering
+
+3. CLASS DIAGRAM (STRUCTURAL) / DIAGRAM KLAS
+- describing the static view of the system.
+- can be used to construct executable code of the software application
+- the only diagram that can be mapped directly with object-oriented languages i.e. Java, C++
+- the most popular diagram in coder community
+- a collection of class diagrams represent the whole system
+- consists of classes and interfaces and their relationsphis; dependency, association, aggregation, inheritence
+
+4. OBJECT DIAGRAM / DIAGRAM OBIEKTÓW
+- derived from class diagram
+- present static view of the system
+- main purpouse is to capture the static view of the system at a particular moment
+- consist of objects
+- helps to understant the system from practical perspective
+
+5. SEQUENCE DIAGRAM / DIAGRAM SEKWENCJI
+- capture the interaction between objects in the context of collaboration
+- high-level interactions between user of the system and the system, between the system and other systems, or between subsystems
+- time in a sequence diagram is all a about ordering, not duration
+- digram sekwencji jest jednym z czterech diagramów interakcji
+- obrazuje kolejność w czasie wysyłania komunikatów pomiędzy różnymi obiektami w systemie
+- uczestnikami diagramów sekwencji są obiekty, opisane nazwą obiektu i jego klasą, które wymieniają między sobą komunikaty
+- diagram sekwencji jest zapisany w prostokącie oznaczonym operatorem sd (od angielskiej nazwy diagramu) i składa się z pionowych linii życia (ang. lifelines) poszczególnych obiektów
+- linia życia obiektu to czas, w którym konkretna instancja obiektu jest w stanie przyjmować komunikaty i wysyłać je

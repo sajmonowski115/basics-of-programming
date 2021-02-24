@@ -1,0 +1,20 @@
+obserwator należy do grupy wzorców behawioralnych
+
+obserwator- ang. observer
+
+występuje relacja jeden-do-wielu
+intencja jest taka aby zmiany stanu jednego obiektu były automatycznie propagowane na inne związane z nim obiekty
+
+worzec oparty jest o dwa interfejsy: interfejs obserwatora (observer) oraz interfejs elementu, który jest obserwowany (observable)
+
+metody interfejsu elementu obserwowanego:
+*attach- dodaj nowego obserwatora
+*detach- usuń istniejącego obserwatora
+*notify- powiadom wszystkich obserwatorów o zmianie
+
+obserwator posiada tylko jedną metodę; update- aktualizuj informacje po wystąpieniu zmiany
+
+W swojej podstawowej wersji wzorzec obserwator nie posiada mechanizmu na informowanie o tym co dokładnie zmieniło się w obserwowanym obiekcie.
+
+wzorzec obserwator jest bardzo generyczny
+*generyczny- możliwy do użycia w szerokim polu zastosowań, akceptujący różne typy argumentów, przetwarzanych danych itp.
