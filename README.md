@@ -1,2 +1,2 @@
 # basics-of-programming
-In this repository I commit the very basics of any programming language I've learned
+In this repository I document the progress I make in programming and networking.
