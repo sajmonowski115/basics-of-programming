@@ -1,0 +1,8 @@
+Zad 8, Szymon, ZROBIONE
+
+Zaimplementowanie interfejsu graficznego ratusza. 
+1. Gracz powinien być na bieżąco informowany o ilości posiadanych przez siebie surowców
+(złota, drewna, kamienia).
+2. Należy zaimplementować metody upgradeSawmill, upgradeQuarry, upgradeMint oraz
+zaimplementować metodę sentAttack(), która otwiera nowy formularz- formularz ataku.
+3. Należy zaimplementować formularz ataku (interfejs graficzny).

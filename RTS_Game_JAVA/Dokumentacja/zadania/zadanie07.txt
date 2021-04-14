@@ -1,0 +1,18 @@
+﻿Zad 7, Marek, ZROBIONE
+
+Należy zaimplementować mechanizmy ataku/obrony wioski na miasto oraz miasta na wioskę.
+
+Mechanizmy opisane są w folderze osady w plikach miasto oraz wioska.
+
+Ważne podpunkty:
+*przed wysłaniem ataku należy sprawdzić czy gracz posiada wystarczającą ilość
+jednostek, którymi chce zaatakować
+*jeśli atak gracza kończy się powodzeniem, to wioska przechodzi pod panowanie gracza
+*jeśli atak wioski końzzy się powodzeniem, to gracz zostaje pokonany (GAME OVER)
+*jeśli gracz podbije daną wioskę, zanim ta zdąży zaatakować to token ataku wioski zostaje 
+anulowany i atak z wioski na gracza nigdy nie dochodzi do skutku.
+*po każdym starciu powinna zostać zaktualizowana ilość poszczególnych jednostek
+bojowych gracza (zmienne numberOf.. przechowywane w koszarach)
+*przy starciach pomiędzy barbarzyńcami i armią gracza zwycięstwo oraz straty jednostek
+określać należy na podstawie parametrów jednostek; wartość ataku/obrony
+

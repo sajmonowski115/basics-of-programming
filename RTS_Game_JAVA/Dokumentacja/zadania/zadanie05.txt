@@ -1,0 +1,25 @@
+Zad 5, Marek, ZROBIONE
+
+Zaimplementować w wiosce i mieście mechanizm zbierania podatków zgodnie z poniższym opisem. 
+
+Wioska znajduje się w jednym z dwóch stanów: podbita lub niepodległa; atrybut bool independent.
+
+Miasto posiada parametr określający ilość podbitych do tej pory wiosek (początkowo ta liczba wynosi zero).
+
+Miasto dziedziczy z klasy Osada (Colony), która dziediczy z klasy Thread.
+Pobór podatków z podbitych wiosek jest cykliczny- odbywa się co 30 sekund.
+
+Ilość pobieranych podatków zapisana jest w zmiennych stoneTax, woodTax oraz goldTax.
+Zmienne te obliczane są w następujący sposób:
+
+stoneTax = numberOfConqueredVillages * 50;
+woodTax =  numberOfConqueredVillages * 50;
+goldTax =  numberOfConqueredVillages * 75;
+
+Co 30 sekund (czas poboru podatków) następuje aktualizacja zmiennych w ratuszu (TownHall):
+amountOfWood += woodTax;
+amountOfStone += stoneTax;
+amountOfGold += goldTax;
+
+Ponieważ ratusz jest i pozostanie tylko jeden, a zmienne amountOf Wood/Stone/Gold
+są wykorzystywane i aktualizowane w kilku klasach, należy zadeklarować je jako zmienne statyczne.

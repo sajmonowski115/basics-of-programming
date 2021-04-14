@@ -1,0 +1,27 @@
+Zad 1, Szymon i Marek, ZROBIONE
+Utworzenie diagramu klas UML w creatly przedstawiającego wszystkie klasy projektu.
+
+Zad 2, Szymon i Marek, ZROBIONE
+Utworzenie projektu oraz wstępna implementacja klas w Intellij.
+
+Zad 3, Marek, ZROBIONE
+Zaprogrogramowanie budynków funkcyjnych zgodnie z ich opisem oraz umożliwienie ich rozbudowy i kontrolowania stanu w ratuszu.
+
+Zad 4, Szymon, ZROBIONE
+Zaprogramowanie koszar zgodnie z ich opisem (tworzenie jednostek bojowych).
+
+Zad 5, Marek, ZROBIONE
+Zaimplementować w wiosce i mieście mechanizm zbierania podatków.
+
+Zad 6, Szymon, ZROBIONE
+Utworzenie interfejsu graficznego koszarów za pomocą biblioteki Swing (wykorzystanie
+domyślnych narzędzi GUI w Intellij)
+
+Zad 7, Marek, W TRAKCIE
+Zaimplementować mechanizmy ataku/obrony wioski na miasto oraz miasta na wioskę.
+
+Zad 8, Szymon, W TRAKCIE
+Zaimplementowanie interfejsu graficznego ratusza. 
+
+Zad 9, , W TRAKCIE
+Utworzyć mapę świata gry (GUI).

@@ -1,0 +1,14 @@
+Zad 12, Szymon, ZROBIONE
+
+Zaimplementować mechanizmy końca gry.
+
+Gra kończy się w trzech sytuacjach:
+1) upłynął czas gry
+2) barbarzyńcy podbili miasto gracza
+3) gracz podbił wszystkie sąsiadujące z nim wioski
+
+W przypadkach 1 oraz 2 gracz odnosi porażkę, wyświetla się duży napis GAME OVER.
+W przypadku nr 3 gra kończy się zwycięstwem gracza, pojawia się komunikat o zwycięstwie gracza.
+
+W każdym przypadku po końcu gry zaprzestana zostaje produkcja surowców, możliwość rekrutacji jednostek
+bojowych oraz wysyłania ataku na wioski.

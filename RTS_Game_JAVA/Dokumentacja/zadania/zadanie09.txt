@@ -1,0 +1,7 @@
+﻿Zad 9, Marek, ZROBIONE
+
+Należy utworzyć mapę świata gry (GUI). Na mapie powinno znajdować się miasto gracza otoczone 
+czterema wioskami barbarzyńskimi. Przy każedej wiosce powinna znajdować się informacja o tym 
+ilu barbarzyńców zamieszkuje daną wioskę (atrybut numberOfBarbarians), a także
+czy wioska jest niepodległa czy też znalazła się już pod panowaniem gracza.
+Przy mieście należy wyświetlić jego nazwę.

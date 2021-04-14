@@ -1,0 +1,7 @@
+Zad 4, Szymon, ZROBIONE
+Zaprogramowanie koszarów zgodnie z ich opisem (tworzenie jednostek bojowych).
+
+Przy tworzeniu metod rekrutacji poszczególnych jednostek należy sprawdzić za pomocą
+warunków logicznych czy w ratuszu znajduje się wystarczająca ilość złota. 
+Należy powiązać metody rekrutacji ze zmienną amountOfGold i aktualizować ją (zmniejszać)
+za każdym razem kiedy powstaje nowa jednostka.

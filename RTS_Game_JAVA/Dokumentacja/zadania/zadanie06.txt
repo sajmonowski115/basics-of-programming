@@ -1,0 +1,10 @@
+Zad 6, Szymon, ZROBIONE
+
+Utworzenie interfejsu graficznego koszarów za pomocą biblioteki Swing (wykorzystanie
+domyślnych narzędzi GUI w Intellij)
+
+Należy zaimplementować metody rekrutacyjne dostępne w koszarach oraz
+przedstawiać na bieżąco zaktualizowaną liczbę poszczególnych jednostek
+bojowych.
+
+Należy wyświetlać ilość dostępnego złota (zmienna z ratusza amountOfGold i aktualizować ją za każdym razem kiedy ta zmienna się zwiększa/zmiejsza).

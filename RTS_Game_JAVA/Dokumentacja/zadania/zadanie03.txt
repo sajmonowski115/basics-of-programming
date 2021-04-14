@@ -1,0 +1,13 @@
+Zad 3, Marek, ZROBIONE
+Zaprogrogramowanie budynków funkcyjnych zgodnie z ich opisem oraz umożliwienie
+ich rozbudowy i kontrolowania stanu w ratuszu.
+
+Budynki funkcyjne (tartak, kamieniołom, mennica) powinny być zgodne z ich opisem.
+
+W ratuszu należy utworzyć i zaimplementować następujące metody:
+*upgradeSawmill()
+*upgradeQuarry()
+*upgradeMind()
+
+W ratuszu należy powiązać zmienne amountOfWood, amountOfStone, amountOfGold z odpowiednio: 
+tartakiem, kamieniołomem oraz mennicą.

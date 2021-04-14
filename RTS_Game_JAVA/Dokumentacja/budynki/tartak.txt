@@ -1,0 +1,22 @@
+Tartak dziediczy z klasy Building, która dziedziczy z klasy Thread.
+
+Produkcja drewna w tartaku jest cykliczna. Następuje co każde 15 sekund.
+Ilość drewna, które jest produkowane co każde 15 sekund jest zapisana w zmiennej woodProduction.
+Zmienna woodProduction obliczana jest według następującego wzoru:
+woodProducion = 25 * level
+level- poziom tartaku
+
+Produkcja drewna obsługiwana jest poprzez wątek (metody run() oraz start()).
+
+Aby rozbudować tartak do kolejnego poziomu potrzebne są kamień oraz drewno.
+Koszty rozbudowy obliczane są następująco:
+kamień: woodProduction*3
+drewno: woodProduction*3
+
+Przykład: tartak ma 3 poziom. Jego woodProduction wynosi 75, zatem co każde 15 sekund 
+zmienna amountOfWood (w ratuszu) zwiększa się o 75. Żeby rozbudować 
+tartak do poziomu czwartego potrzebne jest 225*kamień oraz 225*drewno.
+
+Rozkaz rozbudowy tartaku wydawany jest w ratuszu. Należy sprawdzić czy gracz posiada 
+wystarczającą ilość drewna i kamienia. Jeśli to tak to poziom tartaku się zwiększa, 
+a zmienne amountOfWood oraz amountOfStone zmniejszają się o odpowiednią ilość (koszt rozbudowy).

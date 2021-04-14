@@ -1,0 +1,4 @@
+Ratusz jest budynkiem decyzyjnym, w nim podejmowane są wszelkie decyzje dotyczące miasta.
+
+W ratuszu przechowywane są informacje odnośnie surówców posiadanych przez gracza, a także
+możliwość wysłania ataku na sąsiednią wioskę.

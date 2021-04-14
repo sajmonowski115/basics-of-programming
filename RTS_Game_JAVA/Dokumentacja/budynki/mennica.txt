@@ -1,0 +1,22 @@
+Mennica dziediczy z klasy Building, która dziedziczy z klasy Thread.
+
+Produkcja złota w mennicy jest cykliczna. Następuje co każde 15 sekund.
+Ilość złota, które jest produkowane co każde 15 sekund jest zapisana w zmiennej goldProduction.
+Zmienna goldProduction obliczana jest według następującego wzoru:
+goldProduction = 50*level;
+level- poziom mennicy
+
+Produkcja złota obsługiwana jest poprzez wątek (metody run() oraz start()).
+
+Aby rozbudować mennicę do kolejnego poziomu potrzebne są kamień oraz drewno.
+Koszty rozbudowy obliczane są następująco:
+kamień: goldProduction*2
+drewno: goldProduction*2
+
+Przykład: mennica ma 5 poziom. Jej goldProduction wynosi 250,
+zatem co każde 15 sekund zmienna amountOfGold (w ratuszu) zwiększa się o 250. Żeby rozbudować 
+mennicę do poziomu czwartego potrzebne jest 125*kamień oraz 125*drewno.
+
+Rozkaz rozbudowy mennicy wydawany jest w ratuszu. Należy sprawdzić czy gracz posiada 
+wystarczającą ilość drewna i kamienia. Jeśli tak to poziom mennicy się zwiększa, 
+a zmienne amountOfWood oraz amountOfStone zmniejszają się o odpowiednią ilość (koszt robudowy).

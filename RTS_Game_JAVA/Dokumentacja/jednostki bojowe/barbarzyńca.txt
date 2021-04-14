@@ -1,0 +1,10 @@
+﻿Barbarzyńcy to jedyne jednostki, których nie da się rekrutować w koszarach. 
+Są oni przypisani do swoich wiosek, a nie do miasta i koszar.
+Mają sporą siłę ataku, ale stosunkowo niewielką siłę obrony. Jeśli ich wioska zostanie szybko zdobyta
+ to nie przyniosą oni wielu zniszczeń armi gracza. 
+Jednak jeśli to oni zaatakują pierwsi mogą okazać się groźnym przeciwnikiem.
+
+Konkretne parametry klasy barbarzyńca:
+*wartość ataku: 25
+*wartość obrony: 15
+*koszt rekrutacji: brak
